@@ -1,0 +1,18 @@
+.class1{
+    color: red;
+}
+.class2{
+    background-color: rgb(145, 228, 145);
+    border-radius: 15px;
+    border: none;
+    height: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+}
+.class3{
+    border-radius: 8px ;
+    border: 3px solid black;
+    padding-left: 1%;
+    padding-right: 1%;
+}

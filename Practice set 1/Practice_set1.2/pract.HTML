@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="pract.CSS"> 
+</head>
+<body>
+  <header>
+    <h1>Lamborghini Temerario</h1>
+    <h3>The Temerario is the spiritual successor to the Huracan range. Globally unveiled in August last year, the prices of this Lamborghini sports car are scheduled to be announced on 30 April. It will be positioned between the Urus SE and the flagship Revuelto.</h3>
+  </header>
+<div class = "box">
+<div class="left-box">
+  <img id="image" src="temerario01.webp" alt="car">
+</div>
+<div class="right-box">
+  <div id="box-btn">
+    <button class="class2" onclick="
+     cartquantity = cartquantity +1;
+     document.querySelector(' #ID_H1 ').innerText=`This is  ${cartquantity}  bag items`
+    ">ADD CAR</button>
+    <button class="class3" onclick="
+   cartquantity = cartquantity -1;
+   document.querySelector(' #ID_H1 ').innerText=`This is  ${cartquantity}  bag items`
+   ">REMOVE CAR</button>
+   </div>
+   <div id="prize">
+     <h1>Rs. 6.00 Crore</h1><br>
+   </div>
+  
+  
+    <h2 id="ID_H1"></h2>
+</div>
+</div>
+     <script>
+        let cartquantity=0;
+        document.querySelector(' #ID_H1 ').innerText=`This is  ${cartquantity}  Car Added `
+     </script>
+
+</body>
+</html>
