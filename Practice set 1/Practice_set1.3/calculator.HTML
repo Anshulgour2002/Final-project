@@ -12,7 +12,9 @@
     <input type="text" id="display" readonly>
  <div class="button-div">
    
-    <button class="btn" onclick="currentDisplayValue=currentDisplayValue+'';document.querySelector('#display').value =currentDisplayValue;">c</button>
+    <button class="btn" 
+    onclick="currentDisplayValue= '';
+    document.querySelector('#display').value =currentDisplayValue;">c</button>
     <button class="btn" onclick=" currentDisplayValue=currentDisplayValue+'1';document.querySelector('#display').value =currentDisplayValue;
     ">1</button>
     <button class="btn" onclick=" currentDisplayValue=currentDisplayValue+'2';document.querySelector('#display').value =currentDisplayValue; 
@@ -33,7 +35,12 @@
     <button class="btn" onclick="currentDisplayValue=currentDisplayValue +'/';document.querySelector('#display').value =currentDisplayValue;">/</button>
 
 
-    <button class="btn" onclick="currentDisplayValue= eval(currentDisplayValue) +' ';document.querySelector('#display').value =currentDisplayValue;">=</button>
+    <button class="btn" onclick="
+    let result =currentDisplayValue
+    currentDisplayValue= eval(currentDisplayValue) ; document.querySelector('#display').value =currentDisplayValue;">=</button>
+    
+     
+    
     
      
     
