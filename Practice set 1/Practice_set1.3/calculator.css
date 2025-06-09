@@ -1,0 +1,27 @@
+.Input{
+ border: 1px solid rgb(94, 93, 93);
+ border-radius: 5px;
+ width: 200px;
+ font-size: 30px;
+}
+#display{
+    margin-left: 15px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+#id{
+    margin: 10px;
+    width: 85%;
+}
+
+.button-div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.btn{
+    height: 45px;
+    width: 45px;
+    margin: 3px;
+}
