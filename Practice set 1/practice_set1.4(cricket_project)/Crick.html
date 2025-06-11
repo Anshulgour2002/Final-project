@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cricket</title>
+    <link rel="stylesheet" href="crick.css">
+
+</head>
+<body>
+    <h1>Bat Ball Stump Game</h1>
+    <button onclick=" 
+    console.log('you have choose to bat');
+
+        let rendom_num=Math.random() * 3;
+        let computer_choice;
+        if (rendom_num >0 && rendom_num <=1){
+            computer_choice = 'Bat';
+            console.log('Computer choose Bat');
+        }
+        else if (rendom_num >1 && rendom_num <=2){
+            computer_choice = 'Ball';
+            console.log('Computer choose Ball');
+        }
+        else{
+            computer_choice = 'Stump';
+            console.log('Computer choose Stump')
+        }
+
+        
+
+        if(computer_choice === 'Stump'){
+            console.log('computer is win');
+        }
+        else if(computer_choice=== 'Bat'){
+            console.log('Taie')
+        }
+        else{
+            console.log('user is win')
+        }
+    
+    ">Bat</button>
+    <button>Ball</button>
+    <button>Stump</button>
+    
+</body>
+</html>
