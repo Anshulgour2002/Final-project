@@ -10,27 +10,38 @@
 
     
     <script>
-        let age=7
-        let gender='female';
-        let Discount;
+        function primenum(num){
+            //let rem =num%2;
+            for(let i=2;i<=num-1;i++){
+               if( num%i==0){
+                console.log(num);
+               }
+            }
+        }
+        console.log(primenum(100));
+    
 
-        if(age <= 5){
-            Discount=100;
-        }
-        
-        else if(gender==='female' || age <=8){
-            Discount=50;
-        }
-        
-        else if(age >= 65){
-            Discount=30;
-        }
-        else{
-            Discount=0;
-        }
 
-        console.log(`The discount of metro Ticket is ${Discount}`)
-
+        /*
+        function oddoreven(number){
+        let rem=number%2;
+        let even = rem==0;
+        return even;
+        }
+        console.log(oddoreven(32))
+        console.log(oddoreven(321))
+        console.log(oddoreven(323))
+        console.log(oddoreven(2))
+        /*{
+            let reme =number%2;
+            if(reme==1){
+                return 'odd';
+            }
+            else{
+                return 'even';
+            }
+        }
+        console.log(oddoreven(9));*/
     </script>
 </body>
 </html>

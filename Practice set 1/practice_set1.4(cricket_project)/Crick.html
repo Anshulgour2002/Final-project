@@ -8,21 +8,62 @@
 <body>
     <h1>Bat Ball Stump Game</h1>
     <button onclick=" 
+    crateafunctioninnfirsttimeinjs();
+
+        let result; 
+        if(computer_choice === 'Stump'){
+            result='computer is win';
+        }else if(computer_choice=== 'Bat'){
+            result='Taie';
+        }else{
+            result='user is win';
+        }
+        alert(`You have choose to bat . Computer choice is ${computer_choice} and ${result} `);
+        ">Bat</button>
 
 
-        let rendom_num=Math.random() * 3;
-        let computer_choice;
+
+    <button onclick="
+    crateafunctioninnfirsttimeinjs();
+
+        if (computer_choice === 'Stump') {
+            result='User wins';
+        } else if (computer_choice === 'Bat') {
+            result='Computer wins';
+        } else {
+            result='Match is Tie';
+        }
+         alert(`you have to choose to ball and Computer choice ${computer_choice} and ${result}`);
+        ">Ball</button>
+
+
+    <button onclick="
+    crateafunctioninnfirsttimeinjs();
+
+        if (computer_choice === 'Stump') {
+            result='Tie';
+        } else if (computer_choice === 'Bat') {
+            result='User is wins';
+        } else {
+            result='computer is wins';
+        }
+        alert(`You have choose to stump and Computer choise is ${computer_choice} and ${result}`)
+        ">Stump</button>
+
+
+
+<script>
+let computer_choice;
+function crateafunctioninnfirsttimeinjs(){
+    let rendom_num=Math.random() * 3;
         if (rendom_num >0 && rendom_num <=1){
             computer_choice = 'Bat';
-            //console.log('Computer choose Bat');
         }
         else if (rendom_num >1 && rendom_num <=2){
             computer_choice = 'Ball';
-            //console.log('Computer choose Ball');
         }
         else{
             computer_choice = 'Stump';
-            //console.log('Computer choose Stump')
         }
         
         let result; 
@@ -37,66 +78,8 @@
         }
         
         alert(`You have choose to bat . Computer choice is ${computer_choice} and ${result} `);
-         ">Bat</button>
+}
 
-
-
-    <button onclick="
-         let rendom_num = Math.random() * 3;
-         let computer_choice;
-
-        if (rendom_num > 0 && rendom_num <= 1) {
-            computer_choice = 'Bat';
-            //console.log('Computer chose Bat');
-        } else if (rendom_num > 1 && rendom_num <= 2) {
-            computer_choice = 'Ball';
-            //console.log('Computer chose Ball');
-        } else {
-            computer_choice = 'Stump';
-            //console.log('Computer chose Stump');
-        }
-
-        if (computer_choice === 'Stump') {
-            result='User wins';
-        } else if (computer_choice === 'Bat') {
-            result='Computer wins';
-        } else {
-            result='Match is Tie';
-        }
-         alert(`you have to choose to ball and Computer choice ${computer_choice} and ${result}`);
-">Ball</button>
-
-
-
-
-
-    <button onclick="
-
-         let rendom_num = Math.random() * 3;
-         let computer_choice;
-
-        if (rendom_num > 0 && rendom_num <= 1) {
-            computer_choice = 'Bat';
-            //console.log('Computer chose Bat');
-        } else if (rendom_num > 1 && rendom_num <= 2) {
-            computer_choice = 'Ball';
-            //console.log('Computer chose Ball');
-        } else {
-            computer_choice = 'Stump';
-            //console.log('Computer chose Stump');
-        }
-
-        if (computer_choice === 'Stump') {
-            result='Tie';
-        } else if (computer_choice === 'Bat') {
-            result='User is wins';
-        } else {
-            result='computer is wins';
-        }
-        alert(`You have choose to stump and Computer choise is ${computer_choice} and ${result}`)
-        ">Stump</button>
-
-        
-    
+</script>
 </body>
 </html>
